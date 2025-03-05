@@ -1,314 +1,109 @@
-<!-- <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>学术会议活动</title>
-    <style>
-        /* 页面基本样式 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-image: url('your-image-url.jpg'); /* 替换为你的背景图片链接 */
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #333;
-            font-size: 2em;
-        }
-        p {
-            line-height: 1.6;
-            color: #555;
-        }
-        .agenda ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .agenda li {
-            background-color: #f9f9f9;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .agenda li h3 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-        .agenda li p {
-            margin: 5px 0;
-        }
-        .panel-discussion {
-            background-color: #e9ecef;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
-        }
-        .panel-discussion h3 {
-            font-size: 1.8em;
-        }
-    </style>
-</head>
-<body>
-
-<!-- 页头 -->
-<header>
-    <h1>2025学术会议</h1>
-</header>
-
-<!-- 页面主体内容 -->
-<div class="container">
-
-    <!-- 整体介绍部分 -->
-    <div class="section">
-        <h2>整体介绍 (Abstract)</h2>
-        <p>欢迎参加2025年度学术会议，本次会议将邀请来自世界各地的专家学者分享他们在各自领域的最新研究成果。会议将围绕多个主题展开深入讨论，包括人工智能、可持续发展、医学创新等。我们诚挚地邀请您参与并与全球的学者们一起探讨前沿议题。</p>
-    </div>
-
-    <!-- 会议议程部分 -->
-    <div class="section agenda">
-        <h2>会议议程 (Agenda)</h2>
-        <ul>
-            <!-- 嘉宾1 -->
-            <li>
-                <h3>张教授 - 《人工智能在医学中的应用》</h3>
-                <p><a href="link-to-bio-zhang.html">张教授简介</a></p>
-            </li>
-            <!-- 嘉宾2 -->
-            <li>
-                <h3>李博士 - 《可持续发展与气候变化》</h3>
-                <p><a href="link-to-bio-li.html">李博士简介</a></p>
-            </li>
-            <!-- 嘉宾3 -->
-            <li>
-                <h3>王教授 - 《新兴技术与教育革新》</h3>
-                <p><a href="link-to-bio-wang.html">王教授简介</a></p>
-            </li>
-            <!-- 更多嘉宾可以继续添加 -->
-        </ul>
-    </div>
-
-    <!-- Panel Discussion -->
-    <div class="panel-discussion">
-        <h3>Panel Discussion: “未来的科技与社会”</h3>
-        <p>在本次讨论环节中，来自不同行业和领域的专家将共同探讨未来科技的发展及其对社会的深远影响。我们期待与您一起分享观点、交流思想。</p>
-    </div>
-
-</div>
-
-</body>
-</html> -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IV2025 Workshop</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Header Styles */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #f8f9fa;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
-
-        .logo {
-            height: 50px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        /* Hero Section */
-        .hero-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-        }
-
-        .title-box {
-            background-color: rgba(0,0,0,0.7);
-            color: white;
-            padding: 30px;
-            margin-top: -100px;
-            position: relative;
-        }
-
-        /* Content Sections */
-        .section {
-            padding: 50px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .intro-container {
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            margin: 40px 0;
-        }
-
-        .intro-text {
-            flex: 1;
-        }
-
-        .intro-image {
-            flex: 1;
-            max-width: 500px;
-        }
-
-        /* Agenda Styles */
-        .agenda-item {
-            display: flex;
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-radius: 5px;
-        }
-
-        .time {
-            width: 100px;
-            font-weight: bold;
-        }
-
-        .session-title {
-            flex: 1;
-        }
-
-        .speaker-info {
-            width: 200px;
-            font-size: 0.9em;
-        }
-
-        /* Organizers Section */
-        .organizers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .organizer-card {
-            text-align: center;
-        }
-
-        .organizer-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                padding: 20px;
-            }
-            
-            .intro-container {
-                flex-direction: column;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header class="header">
-        <div class="logo-container">
-            <img src="your-company-logo.png" alt="Company Logo" class="logo">
-            <img src="org-logo.png" alt="Organization Logo" class="logo">
-        </div>
-        <nav class="nav-links">
-            <a href="#intro">Introduction</a>
-            <a href="#agenda">Agenda</a>
-            <a href="#organizers">Organizers</a>
-        </nav>
-    </header>
-
-    <img src="romania.jpg" alt="Romania" class="hero-image">
-
-    <div class="title-box">
-        <h1>Workshop Title</h1>
-        <h2>Date: October 15, 2025 | Location: Rome, Italy</h2>
-    </div>
-
-    <section class="section" id="intro">
-        <h2>Introduction</h2>
-        <div class="intro-container">
-            <div class="intro-text">
-                <p>Your workshop introduction text here...</p>
-            </div>
-            <img src="intro-image.jpg" alt="Intro Image" class="intro-image">
-        </div>
-    </section>
-
+    <!-- 更新后的Agenda部分 -->
     <section class="section" id="agenda">
         <h2>Agenda</h2>
+        
         <div class="agenda-item">
             <div class="time">09:00</div>
-            <div class="session-title">Welcome & Opening</div>
+            <div class="session-title">Welcome & Opening Remarks</div>
+            <div class="speaker-info">Prof. Maria Rossi<br>Conference Chair</div>
+        </div>
+
+        <div class="agenda-item">
+            <div class="time">09:30</div>
+            <div class="session-title">Keynote: Future of Intelligent Vehicles</div>
+            <div class="speaker-info">
+                Dr. James Smith<br>
+                <em>Toyota Research Institute</em><br>
+                <a href="http://example.com/jsmith">Profile</a>
+            </div>
+        </div>
+
+        <div class="agenda-item">
+            <div class="time">10:30</div>
+            <div class="session-title">Coffee Break</div>
             <div class="speaker-info"></div>
         </div>
-        <!-- Add more agenda items following the same structure -->
+
+        <div class="agenda-item">
+            <div class="time">11:00</div>
+            <div class="session-title">Autonomous Driving in Urban Environments</div>
+            <div class="speaker-info">
+                Dr. Wei Zhang<br>
+                <em>Baidu Apollo</em><br>
+                <a href="http://example.com/wzhang">Homepage</a>
+            </div>
+        </div>
+
+        <div class="agenda-item">
+            <div class="time">12:00</div>
+            <div class="session-title">Lunch</div>
+            <div class="speaker-info"></div>
+        </div>
+
+        <div class="agenda-item">
+            <div class="time">13:30</div>
+            <div class="session-title">V2X Communication Challenges</div>
+            <div class="speaker-info">
+                Prof. Elena Ivanova<br>
+                <em>TU Munich</em><br>
+                <a href="http://example.com/eivanova">Website</a>
+            </div>
+        </div>
+
+        <div class="agenda-item">
+            <div class="time">14:30</div>
+            <div class="session-title">Coffee Break</div>
+            <div class="speaker-info"></div>
+        </div>
+
+        <div class="agenda-item">
+            <div class="time">15:00</div>
+            <div class="session-title">Panel Discussion: Ethics in Autonomous Systems</div>
+            <div class="speaker-info">
+                Moderator: Dr. Ahmed Al-Faresi<br>
+                Panelists: All Speakers
+            </div>
+        </div>
     </section>
 
+    <!-- 更新后的Organizers部分 -->
     <section class="section" id="organizers">
         <h2>Organizers</h2>
         <div class="organizers-grid">
             <div class="organizer-card">
-                <img src="organizer1.jpg" alt="Organizer 1" class="organizer-photo">
-                <h3>John Doe</h3>
-                <p>University of Example</p>
-                <a href="http://example.com">Personal Page</a>
+                <img src="organizer1.jpg" alt="Dr. Sophia Chen" class="organizer-photo">
+                <h3>Dr. Sophia Chen</h3>
+                <p>Stanford University</p>
+                <p>Autonomous Systems Lab</p>
+                <a href="mailto:sophia@iv2025.org">Email</a> | 
+                <a href="http://stanford.edu/~schen">Website</a>
             </div>
-            <!-- Add more organizer cards -->
+
+            <div class="organizer-card">
+                <img src="organizer2.jpg" alt="Prof. Luca Bianchi" class="organizer-photo">
+                <h3>Prof. Luca Bianchi</h3>
+                <p>Politecnico di Torino</p>
+                <p>Intelligent Transportation Group</p>
+                <a href="mailto:lbianchi@iv2025.org">Email</a> | 
+                <a href="http://polito.it/lbianchi">Profile</a>
+            </div>
+
+            <div class="organizer-card">
+                <img src="organizer3.jpg" alt="Dr. Priya Patel" class="organizer-photo">
+                <h3>Dr. Priya Patel</h3>
+                <p>MIT CSAIL</p>
+                <p>Computer Vision Research</p>
+                <a href="mailto:priya@iv2025.org">Email</a> | 
+                <a href="http://csail.mit.edu/ppatel">Lab Page</a>
+            </div>
+
+            <div class="organizer-card">
+                <img src="organizer4.jpg" alt="Prof. Hiroshi Tanaka" class="organizer-photo">
+                <h3>Prof. Hiroshi Tanaka</h3>
+                <p>University of Tokyo</p>
+                <p>Robotics Department</p>
+                <a href="mailto:tanaka@iv2025.org">Email</a> | 
+                <a href="http://robotics.u-tokyo.ac.jp">Department Site</a>
+            </div>
         </div>
     </section>
-</body>
-</html>
-
