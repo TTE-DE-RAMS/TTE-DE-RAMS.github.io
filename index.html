@@ -36,6 +36,16 @@
             gap: 30px;
         }
 
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
         /* Hero Section */
         .hero-image {
             width: 100%;
@@ -44,11 +54,24 @@
         }
 
         .title-box {
-            background-color: rgba(0,0,0,0.7);
+            background-color: rgba(0, 0, 0, 0.7);
             color: white;
             padding: 30px;
             margin-top: -100px;
             position: relative;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title-box h1 {
+            margin-bottom: 10px;
+        }
+
+        .title-box h2 {
+            font-size: 1.2em;
         }
 
         /* Content Sections */
@@ -56,6 +79,12 @@
             padding: 50px;
             max-width: 1200px;
             margin: 0 auto;
+        }
+
+        .section h2 {
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #333;
         }
 
         .intro-container {
@@ -67,11 +96,13 @@
 
         .intro-text {
             flex: 1;
+            line-height: 1.6;
         }
 
         .intro-image {
             flex: 1;
             max-width: 500px;
+            border-radius: 10px;
         }
 
         /* Agenda Styles */
@@ -81,6 +112,7 @@
             padding: 15px;
             background-color: #f8f9fa;
             border-radius: 5px;
+            align-items: center;
         }
 
         .time {
@@ -95,6 +127,11 @@
         .speaker-info {
             width: 200px;
             font-size: 0.9em;
+            text-align: right;
+        }
+
+        .speaker-info a {
+            color: #007bff;
         }
 
         /* Organizers Section */
@@ -107,6 +144,9 @@
 
         .organizer-card {
             text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
         }
 
         .organizer-photo {
@@ -117,19 +157,65 @@
             margin-bottom: 15px;
         }
 
-        a {
+        .organizer-card h3 {
+            margin: 10px 0;
+        }
+
+        .organizer-card p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .organizer-card a {
             color: #007bff;
             text-decoration: none;
         }
 
+        .organizer-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
                 padding: 20px;
             }
-            
+
+            .nav-links {
+                margin-top: 15px;
+            }
+
+            .title-box {
+                padding: 20px;
+                margin-top: -50px;
+            }
+
+            .title-box h1 {
+                font-size: 1.5em;
+            }
+
+            .title-box h2 {
+                font-size: 1em;
+            }
+
             .intro-container {
                 flex-direction: column;
+            }
+
+            .intro-image {
+                max-width: 100%;
+            }
+
+            .agenda-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .speaker-info {
+                text-align: left;
+                margin-top: 10px;
             }
         }
     </style>
@@ -158,7 +244,7 @@
         <h2>Introduction</h2>
         <div class="intro-container">
             <div class="intro-text">
-                <p>Your workshop introduction text here...</p>
+                <p>Your workshop introduction text here. This section provides an overview of the workshop's goals, topics, and significance. You can include details about the target audience, the relevance of the workshop to the IV2025 conference, and any other important information.</p>
             </div>
             <img src="intro-image.jpg" alt="Intro Image" class="intro-image">
         </div>
@@ -170,14 +256,14 @@
         <div class="agenda-item">
             <div class="time">09:00</div>
             <div class="session-title">Welcome & Opening Remarks</div>
-            <div class="speaker-info">Prof. A<br>Conference Chair</div>
+            <div class="speaker-info">Prof. Maria Rossi<br>Conference Chair</div>
         </div>
 
         <div class="agenda-item">
             <div class="time">09:30</div>
             <div class="session-title">Keynote: Future of Intelligent Vehicles</div>
             <div class="speaker-info">
-                Dr. Basasasa<br>
+                Dr. James Smith<br>
                 <em>Toyota Research Institute</em><br>
                 <a href="http://example.com/jsmith">Profile</a>
             </div>
@@ -193,8 +279,8 @@
             <div class="time">11:00</div>
             <div class="session-title">Autonomous Driving in Urban Environments</div>
             <div class="speaker-info">
-                Dr. Cacaca<br>
-                <em>Huawei</em><br>
+                Dr. Wei Zhang<br>
+                <em>Baidu Apollo</em><br>
                 <a href="http://example.com/wzhang">Homepage</a>
             </div>
         </div>
@@ -209,7 +295,7 @@
             <div class="time">13:30</div>
             <div class="session-title">V2X Communication Challenges</div>
             <div class="speaker-info">
-                Prof. Dadada<br>
+                Prof. Elena Ivanova<br>
                 <em>TU Munich</em><br>
                 <a href="http://example.com/eivanova">Website</a>
             </div>
@@ -225,7 +311,7 @@
             <div class="time">15:00</div>
             <div class="session-title">Panel Discussion: Ethics in Autonomous Systems</div>
             <div class="speaker-info">
-                Moderator: Dr. Eaeaea<br>
+                Moderator: Dr. Ahmed Al-Faresi<br>
                 Panelists: All Speakers
             </div>
         </div>
@@ -236,7 +322,7 @@
         <div class="organizers-grid">
             <div class="organizer-card">
                 <img src="organizer1.jpg" alt="Dr. Sophia Chen" class="organizer-photo">
-                <h3>Dr. AAAA</h3>
+                <h3>Dr. Sophia Chen</h3>
                 <p>Stanford University</p>
                 <p>Autonomous Systems Lab</p>
                 <a href="mailto:sophia@iv2025.org">Email</a> | 
@@ -245,7 +331,7 @@
 
             <div class="organizer-card">
                 <img src="organizer2.jpg" alt="Prof. Luca Bianchi" class="organizer-photo">
-                <h3>Prof. BBBB</h3>
+                <h3>Prof. Luca Bianchi</h3>
                 <p>Politecnico di Torino</p>
                 <p>Intelligent Transportation Group</p>
                 <a href="mailto:lbianchi@iv2025.org">Email</a> | 
@@ -254,7 +340,7 @@
 
             <div class="organizer-card">
                 <img src="organizer3.jpg" alt="Dr. Priya Patel" class="organizer-photo">
-                <h3>Dr. CCCC</h3>
+                <h3>Dr. Priya Patel</h3>
                 <p>MIT CSAIL</p>
                 <p>Computer Vision Research</p>
                 <a href="mailto:priya@iv2025.org">Email</a> | 
@@ -263,7 +349,7 @@
 
             <div class="organizer-card">
                 <img src="organizer4.jpg" alt="Prof. Hiroshi Tanaka" class="organizer-photo">
-                <h3>Prof. DDDD</h3>
+                <h3>Prof. Hiroshi Tanaka</h3>
                 <p>University of Tokyo</p>
                 <p>Robotics Department</p>
                 <a href="mailto:tanaka@iv2025.org">Email</a> | 
